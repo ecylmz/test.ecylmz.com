@@ -1,0 +1,95 @@
+# SITE CONFIGURATION
+baseurl: ""
+url: "http://ecylmz.com"
+permalink:   /:categories/:title/
+
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: Emre Can Yılmaz
+  avatar: assets/img/triangle.svg
+  favicon: assets/favicon.ico
+  gravatar: 7b2545c7410622f2b1766b7547bd36a5 # Email MD5 hash
+  description: "Emre Can Yılmaz - Bilgisayar Mühendisi - Linux Sisyem Yöneticisi - DevOps" # used by search engines
+
+  # Header and footer text
+  header_text: >
+     <p>Bilgisayar Yüksek Mühendisi - Linux Sistem Yöneticisi - DevOps.</p>
+
+     <p>Bilgi kırıntılarını not alıyorum.</p>
+  header_text_feature_image: assets/img/pexels/triangular.jpeg
+  footer_text: >
+   <p>Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a></p>
+   <p>Copyright 2017</p>
+
+  # Icons
+  rss: true
+  email_address: "emrecan@ecylmz.com" # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  gitlab: "ecylmz"
+  github: "ecylmz"
+  google_plus:
+  instagram: "ecylmz"
+  keybase: "ecylmz"
+  linkedin:  # Full URL
+  pinterest:
+  reddit: "ecylmz"
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam: "ctrlac"
+  tumblr:
+  twitter: "ecylmz"
+  vimeo:
+  wordpress:
+  youtube:
+
+  # Scripts / Features
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname: "ecylmz"
+  katex: false # Enable if using math markup
+  # portfolio: true
+  search: true
+  tags: true
+
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next_post: "Next post"
+  str_previous_post: "Previous post"
+  str_next_page: "Next"
+  str_previous_page: "Prev"
+  str_continue_reading: "Continue reading"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: true
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate, jekyll-seo-tag]
+# theme: type-on-strap # If using the theme as a jekyll theme gem
+exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
