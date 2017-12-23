@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "http://ecylmz.com"
+url: "http://test.ecylmz.com"
 permalink:   /:categories/:title/
 
 # THEME-SPECIFIC CONFIGURATION
